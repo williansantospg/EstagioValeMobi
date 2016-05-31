@@ -1,0 +1,29 @@
+Bom dia, como foi dito no seu email eu gostaria que você desse uma olhada no meu código em java,
+não fiz em javascript pois estou iniciando o aprendizado, más ja estou aprendendo há um tempo jsp, html5 e CSS3.
+Gostaria que fosse levado em consideração pois gosto muito de programar aprender novas linguagens e tecnologias.
+Se possivel da uma olhada no meu código e me diga o que você acha independente do resultado.
+Mandei a descrição do banco de dados que foi feito em PostGreSQL e também mandei um jar para facilitar o teste do
+sistema.
+Segue descrição do banco de dados pois não sei como envia-lo:
+
+CREATE TABLE estoque
+(
+  codigoproduto serial NOT NULL,
+  
+nomeproduto character varying(30),
+  
+tipoproduto character varying(20),
+  
+qtddproduto numeric,
+  precoproduto numeric(10,2),
+  
+tiponegocio character(6),
+  
+CONSTRAINT pk_estoque PRIMARY KEY (codigoproduto)
+)
+
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE estoque
+  OWNER TO postgres;
